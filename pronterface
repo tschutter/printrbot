@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ROOTDIR=`dirname $0`
+ROOTDIR=`readlink --canonicalize ${ROOTDIR}`
+
+cd ${ROOTDIR}/Printrun
+exec ./pronterface.py --config ${ROOTDIR}/config/pronsolerc
