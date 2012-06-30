@@ -16,7 +16,8 @@ Usage
 Links
 -----
 
-* `Printrun (pronterface) <https://github.com/kliment/Printrun>`__
+* `Printrun (pronterface and pronsole)
+  <https://github.com/kliment/Printrun>`__
 
 * `Slic3r <http://slic3r.org/>`__
 
