@@ -8,7 +8,7 @@ Usage
 ::
 
     sudo apt-get install python-serial python-wxgtk2.8 python-pyglet
-    git clone --recursive git://github.com/tschutter/printrbot.git
+    git clone --recursive git@github.com:tschutter/printrbot.git
     cd printrbot
     wget -P /tmp http://dl.slic3r.org/linux/slic3r-linux-x86_64-0-8-4.tar.gz
     tar xzf /tmp/slic3r-linux-x86_64-0-8-4.tar.gz
