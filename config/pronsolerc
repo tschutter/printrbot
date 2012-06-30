@@ -1,6 +1,23 @@
+!print "Loading " + self.rc_filename
 set port /dev/ttyACM0
 set last_temperature 230.0
 set last_bed_temperature 110.0
 set sliceoptscommand /home/tom/printrbot/Slic3r/bin/slic3r --load /home/tom/printrbot/abs.ini --ignore-nonexistent-config
 set slicecommand /home/tom/printrbot/Slic3r/bin/slic3r $s --load /home/tom/printrbot/abs.ini --output $o
 set last_file_path /home/tom/printrbot/things
+
+# macro fan
+#     !global _fan
+#     !if '_fan' in globals() and _fan:
+#         !_fan = 0
+#         M107
+#         !if hasattr(self,"cur_button") and self.cur_button is not None:
+#             !self.onecmd('button %d "fan (off)" /c green fan' % self.cur_button)
+#     !else:
+#         !_fan = 1
+#         M106
+#         !if hasattr(self,"cur_button") and self.cur_button is not None:
+#             !self.onecmd('button %d "fan (on)" /c yellow fan' % self.cur_button)
+# button 1 "fan (off)" /c "green" fan
+
+!print "Loaded " + self.rc_filename
