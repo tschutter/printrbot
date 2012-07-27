@@ -1,6 +1,3 @@
-[submodule "things"]
-	path = things
-	url = git@github.com:tschutter/things.git
 [submodule "Printrun"]
 	path = Printrun
 	url = https://github.com/kliment/Printrun.git
