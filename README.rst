@@ -1,7 +1,7 @@
 printrbot
 =========
 
-All things needed to drive my Printrbot+
+All things needed to drive my Printrbot Plus V1.
 
 Usage
 -----
@@ -12,7 +12,7 @@ Usage
     cd printrbot
     git submodule init
     git submodule update
-    wget -P /tmp http://dl.slic3r.org/linux/slic3r-linux-x86-1-0-0-stable.tar.gz
+    wget -P /tmp http://dl.slic3r.org/linux/slic3r-linux-x86-1-0-1-stable.tar.gz
     tar xzf /tmp/slic3r-linux-*.tar.gz
 
 Tools
@@ -24,6 +24,21 @@ Tools
   tools can be found at `Skeinforge(RepG) vs Cura vs Makerware vs
   Slic3r et al`_.
 
+Modifications
+-------------
+
+Nobody runs a stock Printrbot, and mine is no exception.
+
+* Stiffened the X-axis with a piece of 1/2" aluminum U-channel 14" long.
+
+* Added a 2" cooling fan using a printed bracket.
+
+* Covered the heated printer bed with a 9" by 9" piece of glass to
+  prevent bed warping.
+
+* Placed a 9" by 9" by 3/16" cork tile under the heated printer bed
+  for thermal insulation.
+ 
 Links
 -----
 
