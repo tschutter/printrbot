@@ -46,6 +46,46 @@ Nobody runs a stock Printrbot, and mine is no exception.
 * Placed a 9" by 9" by 3/16" cork tile under the heated printer bed
   for thermal insulation.
 
+Slic3r Config
+-------------
+
+With each new version of Slic3r, the configuration file changes.  It
+is easiest to export a new .ini file from Slic3r and modify it as
+follows.
+
+* ``filament_diameter = 2.95``
+
+    Measured with a caliper at various points along the filament.
+
+* ``first_layer_bed_temperature = 80``
+
+    Current suggestion by the web for ABS.
+
+* ``bed_temperature = 75``
+
+    Current suggestion by the web for ABS.
+
+* ``first_layer_temperature = 230``
+
+    Current suggestion by the web for ABS.
+
+* ``temperature = 230``
+
+    Current suggestion by the web for ABS.
+
+* ``first_layer_height = 0.25``
+
+    Sounds about right.
+
+* ``layer_height = 0.2``
+
+    Sounds about right.
+
+* ``start_gcode = DEFAULT + \nM92 X62.7\nM92 Y62.8\nM92 Z2387.0719\nM92 E536``
+
+    Adjust axis_steps_per_unit for each axis and extruder.  Probably
+    set in 2012 based upon the print of a 40mm cube.
+
 Links
 -----
 
