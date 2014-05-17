@@ -50,7 +50,8 @@ Nobody runs a stock Printrbot, and mine is no exception.
 
 * Added a 50mm cooling fan using a printed `Printbot LC 50mm Fan
   Mount`_ to prevent the extruder from melting previously printed
-  layers.
+  layers.  Slic3r must be called with the --cooling option to enable
+  `fan control`_.
 
 * Covered the heated printer bed with a 9" by 9" piece of glass to
   prevent bed warping.
@@ -58,10 +59,10 @@ Nobody runs a stock Printrbot, and mine is no exception.
 * Placed a 9" by 9" by 3/16" cork tile under the heated printer bed
   for thermal insulation.
 
-* Replaced the extruder herringbone gears with `Spur Gears`.
+* Replaced the extruder herringbone gears with `Spur Gears`_.
   Herringbone gears are intended for high-speed applications.  Their
-  use is not appropriate for the extruder and mine were slightly
-  warped.
+  use is not appropriate for the extruder and min original gears were
+  slightly warped.
 
 Slic3r Config
 -------------
@@ -111,12 +112,13 @@ follows.
     proper temperature.  Note that the value is supposed to be in mm,
     but it is most certainly not.  The correct value here is 250 mm.
 
-* ``max_fan_speed = 80``
+* ``max_fan_speed = 55``
 
     If the fan runs at 100% of the rated speed, it cools the part (or
     the print bed) so much that it tends to pop off of the print bed
     after a dozen or so layers.  Using a fan duct may improve this
-    problem.
+    problem.  With no fan duct, a max speed of 65% resulted in pop
+    off.
 
 Links
 -----
@@ -130,6 +132,7 @@ Links
 * `Printrun @ RepRap wiki <http://reprap.org/wiki/Printrun>`__
 
 .. _Slic3r: http://slic3r.org/
+.. _fan control: http://manual.slic3r.org/Cooling.html
 .. _Skeinforge: http://reprap.org/wiki/Skeinforge/
 .. _Cura: http://software.ultimaker.com/
 .. _Makerware: https://www.makerbot.com/makerware/
