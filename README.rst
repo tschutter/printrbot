@@ -29,6 +29,18 @@ Tools
   modeller. Instead it is a compiler that reads in a script file that
   describes the object and renders the 3D model from this script file.
 
+Calibration
+-----------
+
+The Z-axis end stop should be adjusted so that you can slip two
+thicknesses of index card between the print head and the print bed.
+
+When adjusting the Z-axis end stop, you must press the "Z-home" button
+instead of just using the Z-axis move buttons.  When using the move
+buttons, the hardware will not lower print head below what it thinks
+the Z = 0 position, which is set the last time you powered up the
+printer or pressed "Z-Home".
+
 Modifications
 -------------
 
@@ -45,6 +57,11 @@ Nobody runs a stock Printrbot, and mine is no exception.
 
 * Placed a 9" by 9" by 3/16" cork tile under the heated printer bed
   for thermal insulation.
+
+* Replaced the extruder herringbone gears with `Spur Gears`.
+  Herringbone gears are intended for high-speed applications.  Their
+  use is not appropriate for the extruder and mine were slightly
+  warped.
 
 Slic3r Config
 -------------
@@ -86,6 +103,21 @@ follows.
     Adjust axis_steps_per_unit for each axis and extruder.  Probably
     set in 2012 based upon the print of a 40mm cube.
 
+* ``min_skirt_length = 4``
+
+    Impose a minimum skirt length to ensure that the extruder is
+    primed.  This compensates for the filament that oozes from the
+    extruder when we are waiting for everything to come up to the
+    proper temperature.  Note that the value is supposed to be in mm,
+    but it is most certainly not.  The correct value here is 250 mm.
+
+* ``max_fan_speed = 80``
+
+    If the fan runs at 100% of the rated speed, it cools the part (or
+    the print bed) so much that it tends to pop off of the print bed
+    after a dozen or so layers.  Using a fan duct may improve this
+    problem.
+
 Links
 -----
 
@@ -104,3 +136,5 @@ Links
 .. _Skeinforge(RepG) vs Cura vs Makerware vs Slic3r et al: https://groups.google.com/forum/#!topic/flashforge/D1VHlkvOLxg
 .. _OpenSCAD: http://www.openscad.org/
 .. _Printbot LC 50mm Fan Mount: http://www.thingiverse.com/thing:26775
+.. _Spur Gears: http://www.thingiverse.com/thing:26243
+.. _G-code: http://reprap.org/wiki/G-code
