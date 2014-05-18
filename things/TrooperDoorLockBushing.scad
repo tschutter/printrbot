@@ -22,26 +22,26 @@ difference() {
         }
 
         // cylinder
-        cylinder(h=17, r=4);
+        cylinder(h=17, r=3.7);
 
         // swell
         translate([0, 0, 14.1]) {
-            sphere(r=4.2);
+            sphere(r=4.0);
         }
     }
 
     // through hole
-    cylinder(h=11, r=2.6);
+    cylinder(h=10.5, r=2.75);
     translate([0, 0, 10]) {
-        cylinder(h=4, r=2.2);
+        cylinder(h=4, r=2.5);
     }
     translate([0, 0, 13]) {
-        cylinder(h=4, r=2.6);
+        cylinder(h=4, r=2.75);
     }
 
     // hole through base for ziptie
     translate([10, 0, 0]) {
-        cylinder(h=3, r=2);
+        cylinder(h=3, r=2.7);
     }
 
     // E/W notch
