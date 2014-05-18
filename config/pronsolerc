@@ -7,18 +7,18 @@ set sliceoptscommand /home/tom/src/printrbot/Slic3r/bin/slic3r --load /home/tom/
 set slicecommand /home/tom/src/printrbot/Slic3r/bin/slic3r $s --load /home/tom/src/printrbot/config/slic3r-abs.ini --cooling --output $o
 set last_file_path /home/tom/src/printrbot/things
 
-# macro fan
-#     !global _fan
-#     !if '_fan' in globals() and _fan:
-#         !_fan = 0
-#         M107
-#         !if hasattr(self,"cur_button") and self.cur_button is not None:
-#             !self.onecmd('button %d "fan (off)" /c green fan' % self.cur_button)
-#     !else:
-#         !_fan = 1
-#         M106
-#         !if hasattr(self,"cur_button") and self.cur_button is not None:
-#             !self.onecmd('button %d "fan (on)" /c yellow fan' % self.cur_button)
-# button 1 "fan (off)" /c "green" fan
+macro fan
+    !global _fan
+    !if '_fan' in globals() and _fan:
+        !_fan = 0
+        M106 S0
+        !if hasattr(self,"cur_button") and self.cur_button is not None:
+            !self.onecmd('button %d "Fan (off)" /c green fan' % self.cur_button)
+    !else:
+        !_fan = 1
+        M106 S255
+        !if hasattr(self,"cur_button") and self.cur_button is not None:
+            !self.onecmd('button %d "Fan (on)" /c yellow fan' % self.cur_button)
+button 1 "fan (off)" /c "green" fan
 
 # !print "Loaded " + self.rc_filename
