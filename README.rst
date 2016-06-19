@@ -29,6 +29,8 @@ Tools
   modeller. Instead it is a compiler that reads in a script file that
   describes the object and renders the 3D model from this script file.
 
+* `SOLVESPACE`_ is a parametric 3d CAD program.
+
 Calibration
 -----------
 
@@ -138,6 +140,7 @@ Links
 .. _Makerware: https://www.makerbot.com/makerware/
 .. _Skeinforge(RepG) vs Cura vs Makerware vs Slic3r et al: https://groups.google.com/forum/#!topic/flashforge/D1VHlkvOLxg
 .. _OpenSCAD: http://www.openscad.org/
+.. _SOLVESPACE: http://solvespace.com/
 .. _Printbot LC 50mm Fan Mount: http://www.thingiverse.com/thing:26775
 .. _Spur Gears: http://www.thingiverse.com/thing:26243
 .. _G-code: http://reprap.org/wiki/G-code
