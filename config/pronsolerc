@@ -2,7 +2,7 @@
 
 set port /dev/ttyACM0
 set last_temperature 230.0
-set last_bed_temperature 80.0
+set last_bed_temperature 110.0
 set sliceoptscommand /home/tom/src/printrbot/Slic3r/bin/slic3r --load /home/tom/src/printrbot/config/slic3r-abs.ini --cooling --ignore-nonexistent-config
 set slicecommand /home/tom/src/printrbot/Slic3r/bin/slic3r $s --load /home/tom/src/printrbot/config/slic3r-abs.ini --cooling --output $o
 set last_file_path /home/tom/src/printrbot/things
