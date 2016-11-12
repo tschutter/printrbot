@@ -1,6 +1,10 @@
 // Various Z stop parts.
 
-BottomNutCapture(19, 14, 8, 13, 7, 3, 2);
+for (i = [0:5]) {
+     translate([i * 25, 0, 0]) {
+          BottomNutCapture(19, 14, 8, 13.2, 9 + i * 0.2, 3, 2 + i * 0.2);
+     }
+}
 
 module BottomNutCapture(width, length, height, slotWidth, nutDiameter, nutHeight, screwDiameter) {
     // width = width in mm
