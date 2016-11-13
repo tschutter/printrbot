@@ -8,6 +8,7 @@ Usage
 ::
 
     sudo apt-get install python-serial python-wxgtk2.8 python-pyglet openscad
+    sudo -H pip install --upgrade numpy pyglet # for Printrun
     git clone --recursive git@github.com:tschutter/printrbot.git
     cd printrbot
     git submodule init
