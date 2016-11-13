@@ -4,4 +4,4 @@ ROOTDIR=`dirname $0`
 ROOTDIR=`readlink --canonicalize ${ROOTDIR}`
 
 cd ${ROOTDIR}/Printrun
-exec ./pronterface.py --config ${ROOTDIR}/config/pronsolerc "$@"
+exec python2 pronterface.py --config ${ROOTDIR}/config/pronsolerc "$@"
