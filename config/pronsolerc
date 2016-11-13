@@ -22,3 +22,9 @@ macro fan
 button 1 "fan (off)" /c "green" fan
 
 # !print "Loaded " + self.rc_filename
+set last_window_maximized False
+set last_window_width 1260
+set last_window_height 981
+set last_sash_position 486
+set last_file_filter 0
+set recentfiles ["/home/tom/src/printrbot/things/PrinterBotZStop.stl"]
