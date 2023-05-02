@@ -23,7 +23,7 @@ tab_size_y = 25;
 tab_size_z = 6;  // due to a bug in roundedcube, must be >= 3 * body_radius
 
 // Dimension of screw holes.
-screw_hole_radius = 2.25;  // #8 wood screw
+screw_hole_radius = 2.6;  // #8 or #10 wood screw
 
 // Dimension of wire hole.
 wire_hole_radius = 3;
